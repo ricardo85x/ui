@@ -1,18 +1,9 @@
-import { Link } from "react-router-dom";
+import { Header } from "./components/home/Header";
 
 function App() {
   return (
     <div>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/be-the-hero">Be The Hero</Link>
-          </li>
-        </ul>
-      </nav>
+      <Header />
     </div>
   );
 }
