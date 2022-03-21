@@ -5,6 +5,7 @@ import App from "./App";
 
 import { Dashboard as BeTheHeroDashboard } from "./components/beTheHero/dashboard";
 import { Login as BeTheHeroLogin } from "./components/beTheHero/login";
+import { Register as BeTheHeroRegister } from "./components/beTheHero/register";
 import { GlobalStyle } from "./styles/global";
 
 ReactDOM.render(
@@ -12,10 +13,11 @@ ReactDOM.render(
     <BrowserRouter>
       <Routes>
         {/* Home */}
-        <Route path="/" element={<App />} />
+        <Route index element={<App />} />
         {/* Be the hero */}
         <Route path="/be-the-hero" element={<BeTheHeroDashboard />} />
         <Route path="/be-the-hero/login" element={<BeTheHeroLogin />} />
+        <Route path="/be-the-hero/register" element={<BeTheHeroRegister />} />
       </Routes>
     </BrowserRouter>
     <GlobalStyle />

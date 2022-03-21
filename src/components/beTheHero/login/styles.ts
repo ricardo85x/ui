@@ -1,14 +1,11 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  background: var(--gray-100);
   position: absolute;
   width: 100vw;
   height: 100vh;
 
   display: flex;
-
-  font-family: "Roboto";
 `;
 
 export const Content = styled.div`
