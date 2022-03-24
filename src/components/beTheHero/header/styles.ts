@@ -36,6 +36,8 @@ export const Content = styled.div`
       background-color: var(--red-hero);
       border-radius: 5px;
       border: none;
+      font-size: 1rem;
+      font-weight: 700;
 
       &:hover {
         background-color: var(--red-400);

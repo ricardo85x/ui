@@ -3,6 +3,9 @@ import { RootComponent } from "..";
 import { Content, Container } from "./styles";
 
 export function Header() {
+  const handleNewCase = () => {
+    window.location.href = "/be-the-hero/new-case";
+  };
   return (
     <RootComponent>
       <Container>
@@ -15,8 +18,14 @@ export function Header() {
             <span>Bem vinda, APAD</span>
           </div>
           <div className="right">
-            <button type="button">Cadastrar novo caso</button>
-            <a href="/be-the-hero/login">
+            <button
+              onClick={handleNewCase}
+              title="Cadastrar novo caso"
+              type="button"
+            >
+              Cadastrar novo caso
+            </button>
+            <a href="/be-the-hero/login" title="Sair">
               <MdPowerSettingsNew size="1.3rem" color="var(--red-hero)" />
             </a>
           </div>
